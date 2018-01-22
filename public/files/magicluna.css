@@ -1,0 +1,40 @@
+.wrapper{
+  background: url("img/SovietPictures025.jpg") center center ;
+  background-size: cover;
+  background-repeat: repeat-y;
+  min-height: 100vh;
+  width: 100%;
+}
+.site-heading{
+  text-align: center;
+  padding: 40vh 0;
+  box-sizing: border-box;
+  color: #fff;
+  height: 95vh;
+}
+.site-heading h1{
+  font-size: 80px;
+}
+.subheading{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+img.logo{
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.25rem 0 0;
+}
+a.out-link{
+  font-size: 0.75rem;
+  color: #2e3133!important;
+  margin: 0 0.25rem 0.25rem 0.25rem;
+}
+a.out-link:hover{
+  color: black;
+  text-decoration-line: none;
+  font-style: italic;
+}

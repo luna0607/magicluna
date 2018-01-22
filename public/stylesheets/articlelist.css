@@ -1,0 +1,23 @@
+.article-list-board{
+    width: 70%;
+    left:15%;
+    position: relative;
+    padding-top: 5rem;
+}
+.article-list-board li .articleTime{
+    position: relative;
+    float: right;
+}
+.article-list-board .one-article:hover{
+    background-color: grey;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+}

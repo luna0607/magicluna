@@ -1,0 +1,68 @@
+{% extends './layout.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}
+    <link href="/public/stylesheets/articlelist.css" rel="stylesheet">
+    <link href="/public/files/magicluna.css" rel="stylesheet">
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}
+<ul class="list-group article-list-board">
+    <div class="card" style="width: 100%;">
+        <div class="card-body">
+            <h4 class="card-title"></h4>
+            <h6 class="card-subtitle mb-2 text-muted">创建时间：<span id="create-time"></span>&nbsp;
+               修改时间： <span id="modify-time"></span></h6>
+            <p class="card-text"></p>
+            <!--<a href=”#“ class="card-link" id="last"><&#45;&#45;上一篇</a>-->
+            <!--<a href="#" class="card-link" id="next">下一篇&ndash;&gt;</a>-->
+        </div>
+    </div>
+</ul>
+{% endblock %}
+</body>
+{% block script%}
+<script>{% if type %}
+$(function () {
+    switch ({{type}}){
+    case 0:
+        $('#home').removeClass("active");
+        $('#tech').addClass("active");
+        break;
+    case 1:
+        $('#home').removeClass("active");
+        $('#life').addClass("active");
+        break;
+    case 2:
+        $('#home').removeClass("active");
+        $('#casual').addClass("active");
+        break;
+    }
+    $.ajax({
+        url:'/get_article',
+        data:{article:1,
+            type: {{type}},
+            id: {{id}}
+        },
+    success:function (data) {
+        console.log(data);
+        $('.card-title').text(data.title);
+            $('title').html(data.title);
+        $('.card-text').html(data.content);
+        $('#create-time').text(data.createTime);
+            $('#modify-time').text(data.modifyTime);
+
+    }
+})
+})
+{% endif %}
+</script>
+{% endblock %}
+
+</html>
+
+

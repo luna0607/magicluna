@@ -1,0 +1,65 @@
+{% extends './layout.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+        {% if type ==0%}
+        技术{% endif %}
+        {% if type ==1%}
+        生活{% endif %}
+        {% if type ==2%}
+        随笔
+        {% endif %}
+        {% endblock %}</title>
+    {% block head %}
+    <link href="/public/stylesheets/articlelist.css" rel="stylesheet">
+    <link href="/public/files/magicluna.css" rel="stylesheet">
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}
+<ul class="list-group article-list-board">
+    <!--
+    <li class="list-group-item one-article"><span class="tittle">李思聪是猪</span>
+        <span class="articleTime">2017年12月2日</span></li>-->
+</ul>
+{% endblock %}
+</body>
+{% block script%}
+
+<script>
+            $(function () {
+                switch ({{type}}){
+                    case 0:
+                        $('#home').removeClass("active");
+                        $('#tech').addClass("active");
+                        break;
+                    case 1:
+                    $('#home').removeClass("active");
+                    $('#life').addClass("active");
+                        break;
+                    case 2:
+                    $('#home').removeClass("active");
+                    $('#casual').addClass("active");
+                        break;
+                }
+                $.ajax({
+                    url:'/get_article_list',
+                    data:{type: {{type}}},
+                    success:function (data) {
+                        data.forEach(function (value, index, array) {
+                            $('.article-list-board').append($('<li class="list-group-item one-article"><a href="/get_article?id='+value['id']+'&article=0'+'&type='+{{type}}+'">'
+                            +'<span class="tittle">'+'#'+'<span class="id">'+value['id']+'</span>'+' 《'+value['title']+'》</span><span class="articleTime">'+value['create_time']+'</span></a></li>'))
+                        });
+                }
+            })
+            });
+
+
+
+</script>
+
+{% endblock %}
+
+</html>
