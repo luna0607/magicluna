@@ -3,7 +3,7 @@
  */
 var express = require('express');
 var router = express.Router();
-var reuseFunc=require('./resuseFunctions');
+var reuseFunc=require('./dao');
 
 /* GET tech articles. */
 router.get('/tech_articles',function (req,res,next) {

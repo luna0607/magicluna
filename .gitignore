@@ -2,3 +2,7 @@
 conf
 node_modules
 tmp
+.idea/inspectionProfiles/
+.idea/vcs.xml
+public/images/
+public/javascripts/
