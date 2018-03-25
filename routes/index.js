@@ -23,4 +23,7 @@ router.get('/get_article',function (req,res,next) {
         res.render('../views/article',{type:type,id:id})
     }
 });
+router.get('/marx',function (req,res,next) {
+    res.render('../views/marx')
+});
 module.exports = router;

@@ -11,5 +11,6 @@
     <orderEntry type="library" name="jquery.mCustomScrollbar.concat" level="application" />
     <orderEntry type="library" name="jquery-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="popper" level="application" />
+    <orderEntry type="library" name="highcharts" level="application" />
   </component>
 </module>
