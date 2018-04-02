@@ -22,7 +22,7 @@
 <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
 <script>
     var chart=null;
-    $.getJSON('http://www.magicluna.me/getData', function (data) {
+    $.getJSON('http://localhost/datajson', function (data) {
         chart = Highcharts.chart('container', {
             chart: {
                 zoomType: 'x'

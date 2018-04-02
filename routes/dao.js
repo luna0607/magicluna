@@ -100,22 +100,16 @@ module.exports={
                     var time=new Date(words[0]+" "+words[1]);
                     var jsonTime=Date.UTC(time.getFullYear(), time.getMonth(), time.getDate(), time.getHours(),time.getMinutes(),time.getSeconds());
                     var tmp=[];
-                //    console.log(oldTimeList.indexOf(jsonTime));
-                //    if(oldTimeList.indexOf(jsonTime)===-1&&jsonTime!==null){
                         tmp.push(jsonTime);
                         tmp.push(parseInt(words[2]));
                         console.log(tmp+" "+jsonTime);
                         jsonData.push(tmp);
-            //            oldTimeList.push(jsonTime);
-                //    }else {
-                    //    console.log(jsonTime)
-                   // }
+
                 });
-                //jsonData=[[1, 2, 3], [7, 2, 3], [3, 2, 3]];;
-                // jsonData.sort(function(x, y){
-                //     return (x[0]- y[0]);
-                // });
                 jsonData.pop();
+                fs.writeFile("../BlogJs/public/datajson",JSON.stringify(jsonData),function (message) {
+                    console.log(message)
+                });
                 res.json(jsonData)
             }
         })
