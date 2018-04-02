@@ -5,6 +5,7 @@ var mysql = require('mysql');
 var $conf = require('../conf/db');
 var swig = require("swig");
 var pool = mysql.createPool($conf.mysql);
+var fs = require('fs');
 module.exports={
    getArticleList:function (req,res,next) {
        var type=req.query.type;
@@ -85,5 +86,39 @@ module.exports={
               }
               connection.release();
           });
-      }
+      },
+    getJSON:function (req,res,next) {
+       console.log("ok");
+        fs.readFile('../BlogJs/public/data', 'utf-8', function (err, data) {
+            if (err) {
+                console.log(err);
+            } else {
+                var datas=data.split("\n");
+                var jsonData=[];
+                datas.forEach(function (line, p2, p3) {
+                    var words=line.split(" ");
+                    var time=new Date(words[0]+" "+words[1]);
+                    var jsonTime=Date.UTC(time.getFullYear(), time.getMonth(), time.getDate(), time.getHours(),time.getMinutes(),time.getSeconds());
+                    var tmp=[];
+                //    console.log(oldTimeList.indexOf(jsonTime));
+                //    if(oldTimeList.indexOf(jsonTime)===-1&&jsonTime!==null){
+                        tmp.push(jsonTime);
+                        tmp.push(parseInt(words[2]));
+                        console.log(tmp+" "+jsonTime);
+                        jsonData.push(tmp);
+            //            oldTimeList.push(jsonTime);
+                //    }else {
+                    //    console.log(jsonTime)
+                   // }
+                });
+                //jsonData=[[1, 2, 3], [7, 2, 3], [3, 2, 3]];;
+                // jsonData.sort(function(x, y){
+                //     return (x[0]- y[0]);
+                // });
+                jsonData.pop();
+                res.json(jsonData)
+            }
+        })
+        
+    }
 };
