@@ -26,6 +26,9 @@ router.get('/get_article',function (req,res,next) {
 router.get('/marx',function (req,res,next) {
     res.render('../views/marx')
 });
+router.get('/software',function (req,res,next) {
+    res.render('../views/software')
+});
 router.get('/getData',function (req,res,next) {
     reuseFunc.getJSON(req,res,next);
 });

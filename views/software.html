@@ -1,0 +1,99 @@
+{% extends './layout.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>知乎赞数增长图</title>
+    {% block head %}
+    <style>
+        #container{
+            position: relative;
+            top:150px;
+            margin: 0 20px;
+        }
+    </style>
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}
+<div id="container"></div>
+{% endblock %}
+</body>
+{% block script%}
+<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script>
+    var chart=null;
+    var totalScore=[];
+    var mathScore=[];
+    var englishScore=[];
+    var politicScore=[];
+    var pofessionScore=[];
+    chart = Highcharts.chart('container', {
+        chart: {
+            type: 'scatter',
+            zoomType: 'xy'
+        },
+        title: {
+            text: '507 人按性别划分的身高和体重分布图'
+        },
+        subtitle: {
+            text: '数据来源: Heinz  2003'
+        },
+        xAxis: {
+            title: {
+                enabled: true,
+                text: '身高 (cm)'
+            },
+            startOnTick: true,
+            endOnTick: true,
+            showLastLabel: true
+        },
+        yAxis: {
+            title: {
+                text: '体重 (kg)'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 100,
+            y: 70,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+            borderWidth: 1
+        },
+        plotOptions: {
+            scatter: {
+                marker: {
+                    radius: 5,
+                    states: {
+                        hover: {
+                            enabled: true,
+                            lineColor: 'rgb(100,100,100)'
+                        }
+                    }
+                },
+                states: {
+                    hover: {
+                        marker: {
+                            enabled: false
+                        }
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x} cm, {point.y} kg'
+                }
+            }
+        },
+        series: [{
+            name: '女',
+            color: 'rgba(223, 83, 83, .5)',
+            data:''}]
+    });
+
+</script>
+{% endblock %}
+
+
+
