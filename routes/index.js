@@ -26,11 +26,14 @@ router.get('/get_article',function (req,res,next) {
 router.get('/marx',function (req,res,next) {
     res.render('../views/chart-marx')
 });
-router.get('/software',function (req,res,next) {
-    res.render('../views/chart-software')
-});
+// router.get('/software',function (req,res,next) {
+//     res.render('../views/chart-software')
+// });
 router.get('/zijing-register',function (req,res,next) {
     res.render('../views/chart-zijing-register')
+});
+router.get('/zijing-name-cloud',function (req,res,next) {
+    res.render('../views/chart-zijing-name-cloud')
 });
 router.get('/zijing-rate',function (req,res,next) {
     res.render('../views/chart-zijing-rate')

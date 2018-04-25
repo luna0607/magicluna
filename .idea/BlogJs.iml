@@ -12,5 +12,6 @@
     <orderEntry type="library" name="jquery-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="highcharts" level="application" />
+    <orderEntry type="library" name="wordcloud" level="application" />
   </component>
 </module>
