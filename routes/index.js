@@ -24,10 +24,13 @@ router.get('/get_article',function (req,res,next) {
     }
 });
 router.get('/marx',function (req,res,next) {
-    res.render('../views/marx')
+    res.render('../views/chart-marx')
 });
 router.get('/software',function (req,res,next) {
-    res.render('../views/software')
+    res.render('../views/chart-software')
+});
+router.get('/zijing',function (req,res,next) {
+    res.render('../views/chart-zijing')
 });
 router.get('/getData',function (req,res,next) {
     reuseFunc.getJSON(req,res,next);
