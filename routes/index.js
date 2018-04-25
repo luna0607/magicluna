@@ -29,8 +29,11 @@ router.get('/marx',function (req,res,next) {
 router.get('/software',function (req,res,next) {
     res.render('../views/chart-software')
 });
-router.get('/zijing',function (req,res,next) {
-    res.render('../views/chart-zijing')
+router.get('/zijing-register',function (req,res,next) {
+    res.render('../views/chart-zijing-register')
+});
+router.get('/zijing-rate',function (req,res,next) {
+    res.render('../views/chart-zijing-rate')
 });
 router.get('/getData',function (req,res,next) {
     reuseFunc.getJSON(req,res,next);

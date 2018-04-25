@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="454a8034-db6e-427c-b3e6-534209a5ba07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/chart-zijing.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/marx.html" afterPath="$PROJECT_DIR$/views/chart-marx.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/software.html" afterPath="$PROJECT_DIR$/views/chart-software.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/chart-zijing-rate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/chart-zijing-register.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/chart-zijing.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Magicluna.html" afterPath="$PROJECT_DIR$/views/Magicluna.html" />
@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/views/Magicluna.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="477">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <caret line="50" column="77" lean-forward="false" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
               <folding>
                 <element signature="n#footer#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -48,8 +48,8 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="49" column="76" lean-forward="false" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
+            <state relative-caret-position="476">
+              <caret line="50" column="89" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="50" selection-end-column="89" />
               <folding>
                 <element signature="n#footer#0;n#div#0;n#main#0;n#body#0;n#!!top" expanded="false" />
               </folding>
@@ -60,19 +60,21 @@
       <file leaf-file-name="chart-software.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/chart-software.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="438">
+              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart-zijing.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/chart-zijing.html">
+      <file leaf-file-name="chart-zijing-register.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/chart-zijing-register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="574">
+              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <folding>
+                <element signature="e#57977#59985#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,9 +82,21 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="595">
               <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chart-zijing-rate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/chart-zijing-rate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+              <folding>
+                <element signature="e#662#1090326#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +135,7 @@
       <find>j.map</find>
       <find>js.map</find>
       <find>turboThreshold</find>
+      <find>-</find>
     </findStrings>
     <replaceStrings>
       <replace>/public</replace>
@@ -159,11 +174,14 @@
         <option value="$PROJECT_DIR$/public/datajson" />
         <option value="$PROJECT_DIR$/views/marx.html" />
         <option value="$PROJECT_DIR$/views/software.html" />
+        <option value="$PROJECT_DIR$/views/chart-marx.html" />
+        <option value="$PROJECT_DIR$/views/chart-software.html" />
+        <option value="$PROJECT_DIR$/views/chart-zijing.html" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/chart-zijing-rate.html" />
         <option value="$PROJECT_DIR$/views/layout.html" />
         <option value="$PROJECT_DIR$/views/Magicluna.html" />
-        <option value="$PROJECT_DIR$/views/chart-marx.html" />
-        <option value="$PROJECT_DIR$/views/chart-zijing.html" />
+        <option value="$PROJECT_DIR$/views/chart-zijing-register.html" />
       </list>
     </option>
   </component>
@@ -425,12 +443,12 @@
       <workItem from="1522667492194" duration="2387000" />
       <workItem from="1522824940951" duration="753000" />
       <workItem from="1523720074092" duration="100000" />
-      <workItem from="1524638181550" duration="1586000" />
+      <workItem from="1524638181550" duration="5064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78892000" />
+    <option name="totallyTimeSpent" value="82370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -495,13 +513,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -784,26 +795,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/views/chart-marx.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        <state relative-caret-position="687">
+          <caret line="24" column="823634" lean-forward="false" selection-start-line="24" selection-start-column="823634" selection-end-line="24" selection-end-column="823634" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/chart-software.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="438">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/chart-zijing-rate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="e#662#1090326#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="49" column="76" lean-forward="false" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
+        <state relative-caret-position="476">
+          <caret line="50" column="89" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="50" selection-end-column="89" />
           <folding>
             <element signature="n#footer#0;n#div#0;n#main#0;n#body#0;n#!!top" expanded="false" />
           </folding>
@@ -813,26 +834,28 @@
     <entry file="file://$PROJECT_DIR$/views/Magicluna.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <caret line="50" column="77" lean-forward="false" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
           <folding>
             <element signature="n#footer#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/chart-marx.html">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="24" column="823634" lean-forward="false" selection-start-line="24" selection-start-column="823634" selection-end-line="24" selection-end-column="823634" />
+        <state relative-caret-position="595">
+          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/chart-zijing.html">
+    <entry file="file://$PROJECT_DIR$/views/chart-zijing-register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="574">
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#57977#59985#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
